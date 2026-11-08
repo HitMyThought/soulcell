@@ -1,6 +1,4 @@
-from pathlib import Path
-
-html = r'''<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -85,7 +83,7 @@ html = r'''<!DOCTYPE html>
 <body>
   <div class="wrap">
     <header>
-      <a class="logo" href="#">YOUR / SPACE</a>
+      <a class="logo" href="#">HitMyThought / SPACE</a>
       <nav aria-label="主导航">
         <a href="#projects">项目</a>
         <a href="#about">关于</a>
@@ -152,14 +150,14 @@ html = r'''<!DOCTYPE html>
         </div>
         <div class="actions">
           <!-- 把下面的 # 替换成你的真实链接 -->
-          <a class="button" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <a class="button" href="mailto:hello@example.com">Email ↗</a>
+          <a class="button" href="https://github.com/HitMyThought/soulcell" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="button" href="3118278459@qq.com">Email ↗</a>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>© <span id="year"></span> YOUR NAME. 用一点好奇心，慢慢搭建自己的空间。</div>
+      <div>© <span id="year"></span> HitMyThought. 用一点好奇心，慢慢搭建自己的空间。</div>
     </footer>
   </div>
   <script>
@@ -167,7 +165,3 @@ html = r'''<!DOCTYPE html>
   </script>
 </body>
 </html>
-'''
-path = Path("/mnt/data/index.html")
-path.write_text(html, encoding="utf-8")
-print(f"已创建：{path}（{path.stat().st_size} bytes）")
